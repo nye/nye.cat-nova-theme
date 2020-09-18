@@ -9,48 +9,46 @@ meta {
  * Window styles
  */
 meta.window {
-    border-color: hsba(0, 0%, 0%, 0.15);
+  background-color: #282828;
+  border-color: hsba(0, 0%, 100%, 0.1);
 }
 meta.titlebar {
-    color: #444;
-    border-color: hsba(0, 0%, 0%, 0.25);
+  color: #F0F0F0;
+  background: linear-gradient(hsb(210, 10%, 26%), hsb(210, 10%, 20%));
+  border-color: hsba(0, 0%, 0%, 0.6);
 }
 meta.titlebar.inactive {
+  background-color: #444;
 }
 
 meta.button {
-    background: linear-gradient(hsb(0, 0%, 100%), hsb(0, 0%, 94%));
-    border: linear-gradient(hsba(0, 0%, 0%, 0.2), hsba(0, 0%, 0%, 0.3));
-    color: #F0F0F0;
+  background: linear-gradient(hsb(210, 10%, 34%), hsb(210, 10%, 26%));
+  border: linear-gradient(hsb(210, 10%, 18%), hsb(210, 10%, 14%));
+  color: #F0F0F0;
 }
 meta.button.highlighted {
-    background: linear-gradient(hsb(0, 0%, 90%), hsb(0, 0%, 86%));
-    border: linear-gradient(hsba(0, 0%, 0%, 0.2), hsba(0, 0%, 0%, 0.3));
-    color: #F0F0F0;
+  background: linear-gradient(hsb(210, 10%, 44%), hsb(210, 10%, 36%));
+  color: #F0F0F0;
 }
 meta.button.selected {
-    color: #F0F0F0;
+  color: #F0F0F0;
 }
 meta.button.highlighted.selected {
-    color: #F0F0F0;
+  color: #F0F0F0;
 }
 meta.button.disabled {
-
+  background: linear-gradient(hsb(210, 10%, 34%), hsb(210, 10%, 26%));
+  border: linear-gradient(hsb(210, 10%, 18%), hsb(210, 10%, 14%));
+  color: hsb(0, 0%, 40%);
 }
 
 meta.textfield {
-    background-color: hsb(210, 10%, 14%);
-    border-color: hsb(210, 10%, 24%);
-    color: #F0F0F0;
-}
-meta.textfield.highlighted {
-    background-color: hsb(210, 10%, 10%);
-    border-color: hsb(210, 10%, 24%);
-    color: #F0F0F0;
+  background-color: hsb(210, 10%, 14%);
+  border-color: hsb(210, 10%, 10%);
 }
 
 meta.accent {
-    color: hsb(204, 78%, 97%);
+  color: hsb(204, 78%, 97%);
 }
 
 /*
