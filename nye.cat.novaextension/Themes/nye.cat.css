@@ -1,4 +1,5 @@
 meta {
+  -theme-display-name: "nye.cat";
   -theme-interface-style: dark;
   -theme-vibrancy: vibrant;
   -theme-accent-color: auto;
@@ -8,10 +9,11 @@ meta {
  * Window styles
  */
 meta.window {
-  border-color: hsba(0, 0%, 0%, 0.15);
+    border-color: hsba(0, 0%, 0%, 0.15);
 }
 meta.titlebar {
-  border-color: hsba(0, 0%, 0%, 0.25);
+    color: #444;
+    border-color: hsba(0, 0%, 0%, 0.25);
 }
 meta.titlebar.inactive {
 }
@@ -19,30 +21,36 @@ meta.titlebar.inactive {
 meta.button {
     background: linear-gradient(hsb(0, 0%, 100%), hsb(0, 0%, 94%));
     border: linear-gradient(hsba(0, 0%, 0%, 0.2), hsba(0, 0%, 0%, 0.3));
-    color: black;
+    color: #F0F0F0;
 }
 meta.button.highlighted {
     background: linear-gradient(hsb(0, 0%, 90%), hsb(0, 0%, 86%));
     border: linear-gradient(hsba(0, 0%, 0%, 0.2), hsba(0, 0%, 0%, 0.3));
-    color: black;
+    color: #F0F0F0;
 }
 meta.button.selected {
-    color: white;
+    color: #F0F0F0;
 }
 meta.button.highlighted.selected {
-    color: white;
+    color: #F0F0F0;
 }
 meta.button.disabled {
-    
+
 }
 
 meta.textfield {
-    background-color: hsb(0, 0%, 0%, 0.35);
-    border-color: hsba(0, 0%, 0%, 0.2);
+    background-color: hsb(210, 10%, 14%);
+    border-color: hsb(210, 10%, 24%);
+    color: #F0F0F0;
 }
 meta.textfield.highlighted {
-    background-color: white;
-    border-color: hsba(0, 0%, 0%, 0.2);
+    background-color: hsb(210, 10%, 10%);
+    border-color: hsb(210, 10%, 24%);
+    color: #F0F0F0;
+}
+
+meta.accent {
+    color: hsb(204, 78%, 97%);
 }
 
 /*
@@ -51,11 +59,13 @@ meta.textfield.highlighted {
 meta.document {
   background-color: #282828;
   border-color: hsba(0, 0%, 100%, 0.1);
+  color: #F0F0F0;
 }
 
 meta.document.button {
   background: linear-gradient(hsb(210, 10%, 26%), hsb(210, 10%, 22%));
   border: linear-gradient(hsb(210, 10%, 12%), hsb(210, 10%, 8%));
+  color: #F0F0F0;
 }
 meta.document.button.disabled {
   background: linear-gradient(
@@ -70,32 +80,35 @@ meta.document.button.highlighted {
 meta.document.textfield {
   background-color: hsb(210, 10%, 10%);
   border-color: hsb(210, 10%, 6%);
+  color: #F0F0F0;
 }
 
 /* Text */
 meta.text {
-  color: #fff;
+  color: hsb(210, 10%, 95%);
 }
 meta.text.invisible {
-  color: hsb(210, 20%, 20%);
+  color: hsba(210, 20%, 100%, 0.12);
 }
 meta.text.selected {
+  background-color: #3B4A5A;
 }
 
 /* Cursor */
 meta.cursor {
-  background-color: hsb(210, 10%, 16%);
+  background-color: #2E2E2E;
 }
 
 /* Indentation Guides */
 meta.indentguide {
-  border-color: hsba(220, 10%, 50%, 0.2);
+  border-color: #3B4048;
 }
 
 /* Gutter */
 meta.gutter {
   color: hsb(210, 10%, 40%);
 }
+
 meta.gutter.selected {
   background-color: hsb(210, 10%, 10%);
   color: hsb(210, 10%, 80%);
@@ -106,11 +119,10 @@ meta.gutter.selected {
  */
 
 keyword {
-  color: #81A2BE;
+  color: #80ACCA;
 }
 comment {
-  color: #969896;
-  font-style:italic;
+  color: #6B6C6C;
 }
 processing {
   color: #e8bf6a;
@@ -134,48 +146,46 @@ link {
 
 /* Values */
 value.boolean {
-  color: #ffffff;
+  color: #80ACCA;
 }
 value.null {
-  color: #ffffff;
+  color: #80ACCA;
 }
 value.number {
-  color: #cdde87;
+  color: #FF2600;
 }
 value.entity {
   color: #81a2be;
 }
 value.symbol {
-  color: #cdde87;
+  color: #ACCD67;
 }
 
 /* Identifiers */
 identifier.type {
-  color: hsb(258, 40%, 87%);
+  color: #E5C061;
 }
 identifier.constant {
 }
 identifier.global,
 identifier.variable {
-  color: #cc6666;
+  color: #40C2F4;
 }
-identifier.property,
-identifier.decorator,
-identifier.function,
-identifier.core.function,
-identifier.method {
-  color: #81a2be;
-}
+identifier.property{color: #D19A66;}
+identifier.decorator{color: #81a2be;}
+identifier.function{color: #F0F0F0;}
+identifier.core.function{color: #F0F0F0;}
+identifier.method{color: #F0F0F0;}
 identifier.key {
   color: #CD7774;
 }
 identifier.argument {
-  color: #fff;
+  color: #F0F0F0;
 }
 
 /* Strings */
 string {
-  color: #b5bd68;
+  color: #ACCD67;
 }
 string.key {
   color: #81a2be;
@@ -198,18 +208,18 @@ cdata {
 
 /* Markup */
 markup.heading {
-  color: #fff;
+  color: #F0F0F0;
   font-weight: bold;
 }
 markup.line {
   color: #776644;
 }
 markup.bold {
-  color: #fff;
+  color: #F0F0F0;
   font-weight: bold;
 }
 markup.italic {
-  color: #fff;
+  color: #F0F0F0;
   font-style: italic;
 }
 markup.strikethrough {
@@ -242,16 +252,16 @@ definition.method method.name {
 
 /* Tags */
 tag {
-  color: #e8bf6a;
+  color: #E987FF;
 }
 tag.framework {
   color: #C5C8C6;
 }
 tag.attribute.name {
-  color: #e8bf6a;
+  color: #B568C6;
 }
 tag.attribute.value {
-  color: #CD7774;
+  color: #AC98B2;
 }
 tag.attribute.value.link {
   color: #CD7774;
@@ -263,32 +273,32 @@ style.at {
   font-weight: bold;
 }
 style.selector.element {
-  color: #C5C8C6;
+  color: #F0F0F0;
 }
 style.selector.identifier.id {
-  color: #cdde87;
+  color: #61AFEF;
 }
 style.selector.identifier.class {
-  color: #ffffff;
+  color: #CAA464;
 }
 style.selector.pseudoclass {
-  color: #cdde87;
+  color: #40C2F4;
 }
 style.selector.pseudoelement {
-  color: #cdde87;
+  color: #40C2F4;
 }
 style.attribute.name {
-  color: #81a2be;
+  color: #CAA464;
 }
 style.value.number {
-  color: #cdde87;
+  color: #FF2600;
 }
 style.value.color.hex {
-  color: #e8bf6a;
+  color: #56B6C2;
 }
 style.value.keyword {
-  color: #e8bf6a;
+  color: #40C2F4;
 }
 style.value.color.named {
-  color: #CD7774;
+  color: #40C2F4;
 }
