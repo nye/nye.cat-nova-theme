@@ -8,46 +8,41 @@ meta {
  * Window styles
  */
 meta.window {
-  background-color: #27292C;
-  border-color: hsba(0, 0%, 100%, 0.1);
+  border-color: hsba(0, 0%, 0%, 0.15);
 }
 meta.titlebar {
-  color: hsb(210, 10%, 80%);
-  background: linear-gradient(hsb(210, 10%, 26%), hsb(210, 10%, 20%));
-  border-color: hsba(0, 0%, 0%, 0.6);
+  border-color: hsba(0, 0%, 0%, 0.25);
 }
 meta.titlebar.inactive {
-  background-color: #444;
 }
 
 meta.button {
-  background: linear-gradient(hsb(210, 10%, 34%), hsb(210, 10%, 26%));
-  border: linear-gradient(hsb(210, 10%, 18%), hsb(210, 10%, 14%));
-  color: white;
+    background: linear-gradient(hsb(0, 0%, 100%), hsb(0, 0%, 94%));
+    border: linear-gradient(hsba(0, 0%, 0%, 0.2), hsba(0, 0%, 0%, 0.3));
+    color: black;
 }
 meta.button.highlighted {
-  background: linear-gradient(hsb(210, 10%, 44%), hsb(210, 10%, 36%));
-  color: white;
+    background: linear-gradient(hsb(0, 0%, 90%), hsb(0, 0%, 86%));
+    border: linear-gradient(hsba(0, 0%, 0%, 0.2), hsba(0, 0%, 0%, 0.3));
+    color: black;
 }
 meta.button.selected {
-  color: white;
+    color: white;
 }
 meta.button.highlighted.selected {
-  color: white;
+    color: white;
 }
 meta.button.disabled {
-  background: linear-gradient(hsb(210, 10%, 34%), hsb(210, 10%, 26%));
-  border: linear-gradient(hsb(210, 10%, 18%), hsb(210, 10%, 14%));
-  color: hsb(0, 0%, 40%);
+    
 }
 
 meta.textfield {
-  background-color: hsb(210, 10%, 14%);
-  border-color: hsb(210, 10%, 10%);
+    background-color: hsb(0, 0%, 0%, 0.35);
+    border-color: hsba(0, 0%, 0%, 0.2);
 }
-
-meta.accent {
-  color: hsb(204, 78%, 97%);
+meta.textfield.highlighted {
+    background-color: white;
+    border-color: hsba(0, 0%, 0%, 0.2);
 }
 
 /*
