@@ -2,7 +2,12 @@
 - Initial release
 
 ## Version 1.1
-- Typos and some fixes for Panic's theme library
+- Fixes for Panic's theme library
+- Typos
 
 ## Version 1.2
 - Added an screenshot
+
+## Version 1.3
+- Typo in README
+- Minor tweaks

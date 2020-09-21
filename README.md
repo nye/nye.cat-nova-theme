@@ -6,4 +6,4 @@
 
 I create this theme for my self and use it for my every day work. Feel free to use it and tweak it!
 
-I like to us it only as Editor Theme in combination with the Bright Window Theme.
+I like to use it only as Editor Theme in combination with the Bright Window Theme.

@@ -9,7 +9,7 @@ meta {
  * Window styles
  */
 meta.window {
-  background-color: #282828;
+  background: #282828;
   border-color: hsba(0, 0%, 100%, 0.1);
 }
 meta.titlebar {
@@ -55,7 +55,7 @@ meta.accent {
  * Document styles
  */
 meta.document {
-  background-color: #282828;
+  background: #282828;
   border-color: hsba(0, 0%, 100%, 0.1);
   color: #F0F0F0;
 }
@@ -129,14 +129,14 @@ declaration {
   color: #969896;
 }
 bracket {
-  color: #eee;
+  color: #F0F0F0;
 }
 operator {
-  color: #c5c8c6;
+  color: #F0F0F0;
 }
 invalid {
   background-color: rgba(150, 0, 0, 0.8);
-  color: #fff;
+  color: #F0F0F0;
 }
 link {
   color: #636cff;
@@ -164,6 +164,7 @@ identifier.type {
   color: #E5C061;
 }
 identifier.constant {
+  color: #F0F0F0;
 }
 identifier.global,
 identifier.variable {
@@ -224,7 +225,7 @@ markup.strikethrough {
   color: #776644;
 }
 markup.list.item {
-  color: #fff;
+  color: #F0F0F0;
 }
 markup.code {
   color: #e8bf6a;
