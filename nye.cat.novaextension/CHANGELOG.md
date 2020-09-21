@@ -11,3 +11,6 @@
 ## Version 1.3
 - Typo in README
 - Minor tweaks
+
+## Version 1.4
+- tag.framework in red
